@@ -1,6 +1,5 @@
 $primary-color: #B90415
 $secondary-color: #FCE205
-$shadow-color: #
 
 body
     height: 50%
@@ -74,18 +73,30 @@ a
     .active
         background-color: $primary-color
     
+.w-50
+    margin: auto
+    padding: 2rem
+    display: flex !important
+
+.carousel-item.active
+    width: 100%
+
 .carousel-caption
     color: $primary-color
 
-.dictionary
+.dictionary,.location
     display: flex
     margin: auto
-    padding: 2rem 25% 2rem 25%
+    padding: 2rem 20% 2rem 25%
     color: $primary-color
+    text-align: center
     
-    .dictionaryHead
-        padding-left: 25%
+    .dictionaryHead,.locationHead
+        margin: auto
+        padding: 1rem
 
-    .dictionaryImg
-        box-shadow: 5px 5px 20px #
-        
+
+    .dictionaryImg,.locationImg
+        box-shadow: 5px 5px 20px rgba(0,0,0,0.75)
+
+    
