@@ -1,8 +1,10 @@
 $primary-color: #B90415
 $secondary-color: #FCE205
 
+html
+    scroll-behavior: smooth
+
 body
-    height: 50%
     margin: 0
     font-family: "Trebuchet MS", -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
     font-weight: bolder
@@ -42,21 +44,26 @@ a
     border-radius: 50px
     margin: auto
     color: $secondary-color
-
+    
     p
         padding: 15px
         margin: auto
         font-size: 24px
+        
+    a:hover
+        text-decoration: none
+        color: $primary-color
 
 .jumbotronBtn:hover
         background: $secondary-color
         color: $primary-color
+        text-decoration: none
 
 .mainBody
     background-color: #ECECEC
 
 .learningSection
-    padding: 25px 25px 0 25px
+    padding: 35px 25px 0 25px
     margin: auto
     text-align: center
     background-color: #ECECEC
@@ -64,7 +71,7 @@ a
 
 .carousel-inner
     margin: auto
-    padding: 2rem 15rem 2rem 15rem
+    padding: 0 15rem 2rem 15rem
     background-color: #ECECEC
 
 .w-50
@@ -72,27 +79,24 @@ a
     padding: 2rem
     display: flex !important
 
-.carousel-item img
-    box-shadow: 5px 5px 20px rgba(0,0,0,0.75)
-
 .dictionary,.location
     display: flex
     margin: auto
-    padding: 2rem 20% 2rem 25%
+    padding: 2rem 20% 4rem 25%
     color: $primary-color
     text-align: center
     
     .dictionaryHead,.locationHead
         margin: auto
-        padding: 1rem
+        padding: 1rem 2rem 1rem 2rem
 
 
     .dictionaryImg,.locationImg
         box-shadow: 5px 5px 20px rgba(0,0,0,0.75)
 
 .footer
-    background-color: $primary-color
-    color: $secondary-color
+    background: url('/image/jumbotron.jpg')
+    color: $primary-color
     margin: auto
     padding: 3rem
     text-align: center
@@ -112,4 +116,61 @@ a
 footer p
     margin: 0
     text-align: center
+    font-size: 12px
 
+@media screen and ( max-width: 580px  ) 
+    
+    html
+        display: flex
+        overflow-x: hidden
+
+    .fa-navicon
+        color: $secondary-color
+
+    .navbar
+        width: 100%
+
+    .jumbotron
+        display: flex
+
+        strong
+            margin: 0
+            padding: 1rem
+            display: block
+            font-size: 90px
+
+    .jumbotron-fluid
+            padding: 2rem
+
+    .jumbotronH2
+        padding: 1rem
+
+    .learningSection h1,.dictionaryHead h1,.locationHead h1
+        font-size: 48px
+
+    .dictionary
+        padding: 2rem 2rem 0 2rem
+        display: block
+
+    .location
+        padding: 0 2rem 2rem 2rem
+        display: block
+
+    .learningSection h3,.dictionaryHead h3,.locationHead h3
+        font-size: 28px
+
+    .learningSection p,.dictionaryHead p,.locationHead p
+        font-size: 20px
+        
+    #carouselExampleSlidesOnly
+        display: none
+
+    .footerHeading1,.footerHeading2
+        font-size: 32px
+
+    .mainBody
+        display: block
+
+    .dictionaryImg img
+        width: 100%
+        height: 100%
