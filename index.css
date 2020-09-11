@@ -1,23 +1,164 @@
-/*
-Errno::ENOENT: No such file or directory @ rb_sysopen - index.sass
+html {
+  scroll-behavior: smooth; }
 
-Backtrace:
-C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:454:in `read'
-C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:454:in `update_stylesheet'
-C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:209:in `each'
-C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:294:in `watch'
-C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/plugin.rb:109:in `method_missing'
-C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/exec/sass_scss.rb:358:in `watch_or_update'
-C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/exec/sass_scss.rb:51:in `process_result'
-C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/exec/base.rb:50:in `parse'
-C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/exec/base.rb:18:in `parse!'
-C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/bin/sass:13:in `<top (required)>'
-C:/Ruby27-x64/bin/sass:23:in `load'
-C:/Ruby27-x64/bin/sass:23:in `<main>'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Errno::ENOENT: No such file or directory @ rb_sysopen - index.sass"; }
+body {
+  margin: 0;
+  font-family: "Trebuchet MS", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: bolder; }
+
+nav {
+  background-color: #fff; }
+
+a {
+  color: #B90415; }
+
+.nav-link:hover {
+  background-color: #FCE205;
+  color: #B90415; }
+
+.img-fluid {
+  height: 100vh;
+  width: 100%;
+  overflow: hidden; }
+
+.jumbotron {
+  background: url("/image/jumbotron.jpg");
+  position: relative;
+  display: block;
+  color: #B90415;
+  text-align: center;
+  margin: auto;
+  padding: 200px;
+  font-weight: 900; }
+
+.jumbotronH2 {
+  padding: 2rem 4rem 2rem 4rem; }
+
+.jumbotronBtn {
+  background: #B90415;
+  width: 12rem;
+  height: 4rem;
+  border-radius: 50px;
+  margin: auto;
+  color: #FCE205; }
+  .jumbotronBtn p {
+    padding: 15px;
+    margin: auto;
+    font-size: 24px; }
+  .jumbotronBtn a:hover {
+    text-decoration: none;
+    color: #B90415; }
+
+.jumbotronBtn:hover {
+  background: #FCE205;
+  color: #B90415;
+  text-decoration: none; }
+
+.mainBody {
+  background-color: #ECECEC; }
+
+.learningSection {
+  padding: 35px 25px 0 25px;
+  margin: auto;
+  text-align: center;
+  background-color: #ECECEC;
+  color: #B90415; }
+
+.carousel-inner {
+  margin: auto;
+  padding: 0 15rem 2rem 15rem;
+  background-color: #ECECEC; }
+
+.w-50 {
+  margin: auto;
+  padding: 2rem;
+  display: flex !important; }
+
+.dictionary, .location {
+  display: flex;
+  margin: auto;
+  padding: 2rem 20% 4rem 25%;
+  color: #B90415;
+  text-align: center; }
+  .dictionary .dictionaryHead, .dictionary .locationHead, .location .dictionaryHead, .location .locationHead {
+    margin: auto;
+    padding: 1rem 2rem 1rem 2rem; }
+  .dictionary .dictionaryImg, .dictionary .locationImg, .location .dictionaryImg, .location .locationImg {
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.75); }
+
+.footer {
+  background: url("/image/jumbotron.jpg");
+  color: #B90415;
+  margin: auto;
+  padding: 3rem;
+  text-align: center; }
+  .footer .container {
+    padding: 1rem; }
+    .footer .container .footerHeading1 {
+      padding-bottom: 2rem; }
+    .footer .container .footerHeading2 {
+      padding-top: 2rem; }
+    .footer .container .footerGoogleImg img {
+      border-radius: 17px; }
+
+footer p {
+  margin: 0;
+  text-align: center;
+  font-size: 12px; }
+
+@media screen and (max-width: 580px) {
+  html {
+    display: flex;
+    overflow-x: hidden; }
+
+  .fa-navicon {
+    color: #FCE205; }
+
+  .navbar {
+    width: 100%; }
+
+  .jumbotron {
+    display: flex; }
+    .jumbotron strong {
+      margin: 0;
+      padding: 1rem;
+      display: block;
+      font-size: 90px; }
+
+  .jumbotron-fluid {
+    padding: 2rem; }
+
+  .jumbotronH2 {
+    padding: 1rem; }
+
+  .learningSection h1, .dictionaryHead h1, .locationHead h1 {
+    font-size: 48px; }
+
+  .dictionary {
+    padding: 2rem 2rem 0 2rem;
+    display: block; }
+
+  .location {
+    padding: 0 2rem 2rem 2rem;
+    display: block; }
+
+  .learningSection h3, .dictionaryHead h3, .locationHead h3 {
+    font-size: 28px; }
+
+  .learningSection p, .dictionaryHead p, .locationHead p {
+    font-size: 20px; }
+
+  #carouselExampleSlidesOnly {
+    display: none; }
+
+  .footerHeading1, .footerHeading2 {
+    font-size: 32px; }
+
+  .mainBody {
+    display: block; }
+
+  .dictionaryImg img {
+    width: 100%;
+    height: 100%; } }
+
+/*# sourceMappingURL=index.css.map */
