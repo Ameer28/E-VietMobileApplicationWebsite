@@ -22,17 +22,29 @@ a {
   overflow: hidden; }
 
 .jumbotron {
-  background: url("/image/jumbotron.jpg");
+  background-image: linear-gradient(to right, #B90415, #FCE205);
   position: relative;
   display: block;
-  color: #B90415;
-  text-align: center;
+  color: #fff;
+  text-align: left;
   margin: auto;
   padding: 200px;
   font-weight: 900; }
 
 .jumbotronH2 {
-  padding: 2rem 4rem 2rem 4rem; }
+  padding: 0.5rem 4rem 2rem 2; }
+
+.jumbotronBtn img {
+  width: 30%;
+  height: auto;
+  border-radius: 10%; }
+
+.jumbotronMobileImg {
+  display: flex; }
+
+.jumbotronMobileImg img {
+  width: 50%;
+  height: auto; }
 
 .mainBody {
   background-color: #ECECEC; }
@@ -67,8 +79,8 @@ a {
     box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.75); }
 
 .footer {
-  background: url("/image/jumbotron.jpg");
-  color: #B90415;
+  background-image: linear-gradient(to right, #B90415, #FCE205);
+  color: #fff;
   margin: auto;
   padding: 3rem;
   text-align: center; }
