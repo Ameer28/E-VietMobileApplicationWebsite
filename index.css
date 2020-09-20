@@ -28,24 +28,33 @@ a {
   color: #fff;
   text-align: left;
   margin: auto;
-  padding: 200px;
+  padding: 7rem 5rem 5rem 5rem;
   font-weight: 900; }
 
-.jumbotronH2 {
+.col-lg-6 {
+  padding-top: 2rem;
+  margin: auto; }
+
+.leftSection {
+  padding: 6rem;
+  margin: auto; }
+
+.jumbotronH3 {
   padding: 0.5rem 4rem 2rem 2;
-  display: flex; }
+  opacity: 70%; }
 
 .jumbotronBtn img {
   width: 30%;
   height: auto;
   border-radius: 10%; }
 
-.jumbotronMobileImg {
-  display: flex; }
-
 .jumbotronMobileImg img {
   width: 50%;
   height: auto; }
+
+.iconRows {
+  color: #B90415;
+  padding: 4rem; }
 
 .mainBody {
   background-color: #ECECEC; }
