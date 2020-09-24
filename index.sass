@@ -18,6 +18,9 @@ nav
 a
         color: $primary-color
 
+.nav-link
+    color: $primary-color
+
 .nav-link:hover
     background-color: $secondary-color
     color: $primary-color
@@ -40,6 +43,8 @@ a
 .col-lg-6
     padding-top: 2rem
     margin: auto
+    align-items: center
+    justify-content: center
 
 .leftSection
     padding: 6rem
@@ -69,20 +74,36 @@ a
 .icon-stack
     text-align: center
 
-.mainBody
-    background-color: #eff3f9
+    p
+        opacity: 75%
+
+    h3 
+        padding-top: 1rem
+
+.iconBackground
+    background: linear-gradient(to right, $primary-color, $secondary-color)
+    width: 5rem
+    height: 5rem
+    display: inline-flex
+    align-items: center
+    justify-content: center
+    border-radius: 100%
+
+.bi-phone,.bi-person-fill,.bi-globe
+    color: $tetiary-color
 
 .learningSection
     padding: 35px 25px 0 25px
     margin: auto
     text-align: center
-    background-color: #eff3f9
     color: #000
+
+    p
+        opacity: 75%
 
 .carousel-inner
     margin: auto
     padding: 0 15rem 2rem 15rem
-    background-color: #eff3f9
 
 .w-50
     margin: auto
@@ -95,7 +116,10 @@ a
     padding: 2rem 20% 4rem 25%
     color: #000
     text-align: center
-    
+
+    p
+        opacity: 75%
+
     .dictionaryHead,.locationHead
         margin: auto
         padding: 1rem 2rem 1rem 2rem
@@ -132,8 +156,11 @@ footer p
 @media screen and ( max-width: 580px  ) 
     
     html
-        display: flex
+        height: 100%
+        
+    body
         overflow-x: hidden
+        height: 100%
 
     .fa-navicon
         color: $secondary-color
@@ -150,6 +177,14 @@ footer p
             display: block
             font-size: 90px
 
+    .leftSection
+        text-align: center
+
+    .jumbotronMobileImg img
+        width: 100%
+        height: auto
+        border-radius: 3.2rem
+
     .jumbotron-fluid
             padding: 2rem
 
@@ -157,7 +192,7 @@ footer p
         padding: 1rem
 
     .learningSection h1,.dictionaryHead h1,.locationHead h1
-        font-size: 48px
+        font-size: 40px
 
     .dictionary
         padding: 2rem 2rem 0 2rem
@@ -168,10 +203,10 @@ footer p
         display: block
 
     .learningSection h3,.dictionaryHead h3,.locationHead h3
-        font-size: 28px
+        font-size: 24px
 
     .learningSection p,.dictionaryHead p,.locationHead p
-        font-size: 20px
+        font-size: 18px
         
     #carouselExampleSlidesOnly
         display: none
@@ -183,5 +218,14 @@ footer p
         display: block
 
     .dictionaryImg img
+        display: none
+
+    .locationImg img
+        display: none
+
+    .footerGoogleImg img
         width: 100%
         height: 100%
+
+    .footerHeading1,.footerHeading2
+        font-size: 24px
