@@ -12,6 +12,9 @@ nav {
 a {
   color: #B90415; }
 
+.nav-link {
+  color: #B90415; }
+
 .nav-link:hover {
   background-color: #FCE205;
   color: #B90415; }
@@ -33,7 +36,9 @@ a {
 
 .col-lg-6 {
   padding-top: 2rem;
-  margin: auto; }
+  margin: auto;
+  align-items: center;
+  justify-content: center; }
 
 .leftSection {
   padding: 6rem;
@@ -56,26 +61,39 @@ a {
   border-radius: 2.5rem; }
 
 .iconRows {
-  color: #B90415;
+  color: fff;
   padding: 4rem; }
 
 .icon-stack {
   text-align: center; }
+  .icon-stack p {
+    opacity: 75%; }
+  .icon-stack h3 {
+    padding-top: 1rem; }
 
-.mainBody {
-  background-color: #ECECEC; }
+.iconBackground {
+  background: linear-gradient(to right, #B90415, #FCE205);
+  width: 5rem;
+  height: 5rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%; }
+
+.bi-phone, .bi-person-fill, .bi-globe {
+  color: #fff; }
 
 .learningSection {
   padding: 35px 25px 0 25px;
   margin: auto;
   text-align: center;
-  background-color: #ECECEC;
-  color: #B90415; }
+  color: #000; }
+  .learningSection p {
+    opacity: 75%; }
 
 .carousel-inner {
   margin: auto;
-  padding: 0 15rem 2rem 15rem;
-  background-color: #ECECEC; }
+  padding: 0 15rem 2rem 15rem; }
 
 .w-50 {
   margin: auto;
@@ -86,8 +104,10 @@ a {
   display: flex;
   margin: auto;
   padding: 2rem 20% 4rem 25%;
-  color: #B90415;
+  color: #000;
   text-align: center; }
+  .dictionary p, .location p {
+    opacity: 75%; }
   .dictionary .dictionaryHead, .dictionary .locationHead, .location .dictionaryHead, .location .locationHead {
     margin: auto;
     padding: 1rem 2rem 1rem 2rem; }
@@ -117,8 +137,11 @@ footer p {
 
 @media screen and (max-width: 580px) {
   html {
-    display: flex;
-    overflow-x: hidden; }
+    height: 100%; }
+
+  body {
+    overflow-x: hidden;
+    height: 100%; }
 
   .fa-navicon {
     color: #FCE205; }
@@ -134,6 +157,14 @@ footer p {
       display: block;
       font-size: 90px; }
 
+  .leftSection {
+    text-align: center; }
+
+  .jumbotronMobileImg img {
+    width: 100%;
+    height: auto;
+    border-radius: 3.2rem; }
+
   .jumbotron-fluid {
     padding: 2rem; }
 
@@ -141,7 +172,7 @@ footer p {
     padding: 1rem; }
 
   .learningSection h1, .dictionaryHead h1, .locationHead h1 {
-    font-size: 48px; }
+    font-size: 40px; }
 
   .dictionary {
     padding: 2rem 2rem 0 2rem;
@@ -152,10 +183,10 @@ footer p {
     display: block; }
 
   .learningSection h3, .dictionaryHead h3, .locationHead h3 {
-    font-size: 28px; }
+    font-size: 24px; }
 
   .learningSection p, .dictionaryHead p, .locationHead p {
-    font-size: 20px; }
+    font-size: 18px; }
 
   #carouselExampleSlidesOnly {
     display: none; }
@@ -167,7 +198,16 @@ footer p {
     display: block; }
 
   .dictionaryImg img {
+    display: none; }
+
+  .locationImg img {
+    display: none; }
+
+  .footerGoogleImg img {
     width: 100%;
-    height: 100%; } }
+    height: 100%; }
+
+  .footerHeading1, .footerHeading2 {
+    font-size: 24px; } }
 
 /*# sourceMappingURL=index.css.map */
